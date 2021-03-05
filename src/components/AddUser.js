@@ -27,7 +27,7 @@ export const AddUser = () => {
     }
     const changeName =(e)=>{
         setName(e.target.value)
-        console.log(name)
+
     }
     return (
         <Form onSubmit={submitHandler}>

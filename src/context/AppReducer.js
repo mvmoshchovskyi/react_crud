@@ -1,5 +1,11 @@
 export const AppReducer = (state, action) => {
     switch (action.type) {
+
+        case 'FETCH_USER':
+            return {
+                ...state,
+                users:action.payload
+            }
         case 'REMOVE_USER':
             return {
                 ...state,
